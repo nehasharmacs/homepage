@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neha Sharma</title>
+    
+    <style>
+        body {
+            font-size: 1.25em;
+            font-family: Arial, sans-serif;
+            background-color: #DDDDDD;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #006699;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile img {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: #006699;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .project {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .project div {
+        width: 60%;
+    }
+
+    @media (max-width: 768px) {
+        .project {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .project img,
+        .project div {
+            width: 100%;
+        }
+    }
+    </style>
+
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Neha Sharma</h1>
+    </div>
+
+    <div class="profile">
+        <img src="images/neha.jpg" alt="Neha Sharma">
+        <div class="content">
+            <h2>Graduate Student</h2>
+            <p>Tandy School of Computer Science,<br>
+            The University of Tulsa, Oklahoma, United States<br>
+            Email: nes6900 (at) utulsa (dot) edu</a></p>
+            <a href="https://www.linkedin.com/in/neha-sharma-324038229"  target="_blank"><img src="images/linkedin.png" width="40" height="40"/></a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Research Interests</h3>
+        <p>Exploring topics related to data science, artificial intelligence, and machine learning to solve real-world societal challenges.</p>
+    </div>
+
+    <div class="section">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Programming: Python, C, C++, C#, VB.Net, PHP, HTML, CSS, JavaScript, JQuery, SQL</li>
+            <li>Frameworks: AngularJS, Bootstrap, React, Git, Jupyter Notebook, OpenCV</li>
+            <li>Software: Visual Studio, Eclipse, NetBeans, Microsoft Office</li>
+            <li>Machine Learning: scikit-learn, NumPy, Pandas, Matplotlib</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        <ul>
+            <li>2025 - Present: Master of Science in Computer Science, The University of Tulsa, United States</li>
+            <li>2020 - 2021: Post Graduate Diploma in Advanced Computing, Hyderabad, India</li>
+            <li>2010 - 2013: Master of Computer Application, Dr. A P J Abdul Kalam University, India</li>
+            <li>2007 - 2010: Bachelor of Computer Application, Chaudhary Charan Singh University, India</li>
+        </ul>
+    </div>
+
+    <div class="section">
+      <h3>Projects</h3>
+      <div class="project">
+          <img src="images/ms_project.gif" alt="Mass Shooting Prediction">
+          <div>
+              <h4>The Victim Forecast: Predicting Mass Shooting Outcomes with 50 years of Data</h4>
+              <p align="justify">
+                  The Victim Forecast project develops a predictive tool to classify mass shooting incidents by risk levels using historical
+                  data from 1965 to 2019. Leveraging machine learning models such as decision trees, multinomial logistic regression, and Naive
+                  Bayes classifiers, the study identifies key factors - location, shooter demographics, and mental health status - that influence
+                  risk levels. Among the tested models, a decision tree with a quartile-based classification method and Youden's J statistic
+                  proved most effective in balancing recall and accuracy for detecting very high-risk incidents. This research provides actionable
+                  insights for policymakers and law enforcement to enhance public safety and proactive prevention measures.
+              </p>
+          </div>
+      </div>
+  </div>
+  
+  <div class="section">
+      <div class="project">
+          <img src="images/airbnb.gif" alt="Airbnb Booking Prediction">
+          <div>
+              <h4>Predicting Airbnb Booking Likelihood: A Data-Driven Approach</h4>
+              <p align="justify">
+                  This project explores the factors influencing Airbnb booking likelihood using machine learning techniques. By analyzing
+                  property attributes, host details, and pricing data, the study employs Logistic Regression and Decision Tree models to
+                  predict whether a listing will be booked. The findings indicate that Decision Trees outperform Logistic Regression,
+                  achieving an 84% accuracy and perfect recall, making them the best choice for identifying high-likelihood bookings.
+                  These insights provide valuable recommendations for Airbnb hosts to optimize their listings and for the platform to refine
+                  its search algorithms, dynamic pricing, and marketing strategies.
+              </p>
+          </div>
+      </div>
+  </div>
+
+    <div class="section">
+        <h3>Additional Courses</h3>
+        <ul>
+            <li>Missouri University of Science & Technology, MO - Data Science and Machine Learning (Fall 2024)</li>
+            <li>Worcester State University, MA - Intensive English (Summer & Fall 2023)</li>
+            <li>Mathematics for Machine Learning (Deeplearning.AI - Online)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Co-Curricular</h3>
+        <ul>
+            <li>Completed mini bootcamp on Data Science (2022)</li>
+            <li>Certified in PHP, MySQL, C# & VB.Net, C (2015)</li>
+            <li>Attended Dot Net workshop (2012)</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
